@@ -1,6 +1,5 @@
 import _ from 'lodash';
-// import Icon from './Avatari.png';
-import printMe from './print.js';
+// import printMe from './print.js';
 
 function component() {
     const element = document.createElement('div');
@@ -11,7 +10,7 @@ function component() {
     element.innerHTML = _.join(['Hello world', 'webpack'], ' ');
 
     btn.innerHTML = 'Click me and check the console Mea  amor!';
-    btn.onclick = printMe;
+    // btn.onclick = printMe;
     element.appendChild(btn);
 
     return element;
