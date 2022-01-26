@@ -129,14 +129,25 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
 
 /***/ }),
 
-/***/ "./src/server.js":
-/*!***********************!*\
-  !*** ./src/server.js ***!
-  \***********************/
+/***/ "./src/index.js":
+/*!**********************!*\
+  !*** ./src/index.js ***!
+  \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _Avatari_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Avatari.png */ \"./src/Avatari.png\");\n\r\n\r\n\r\n\r\nfunction component() {\r\n    const element = document.createElement('div');\r\n\r\n    // Lodash, currently included via a script, is required for this line to work\r\n    // Lodash, now imported by this script\r\n    element.innerHTML = lodash__WEBPACK_IMPORTED_MODULE_0___default().join(['Hello world server ', 'prod config'], ' ');\r\n    element.classList.add('hello');\r\n    const myIcon = new Image();\r\n    myIcon.src = _Avatari_png__WEBPACK_IMPORTED_MODULE_2__;\r\n\r\n    // element.appendChild(myIcon);\r\n    return element;\r\n}\r\n\r\ndocument.body.appendChild(component());\n\n//# sourceURL=webpack://example-heroku-pro/./src/server.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _Avatari_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Avatari.png */ \"./src/Avatari.png\");\n/* harmony import */ var _print_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./print.js */ \"./src/print.js\");\n\r\n\r\n\r\n\r\n\r\nfunction component() {\r\n    const element = document.createElement('div');\r\n    const btn = document.createElement('button');\r\n\r\n    // Lodash, currently included via a script, is required for this line to work\r\n    // Lodash, now imported by this script\r\n    element.innerHTML = lodash__WEBPACK_IMPORTED_MODULE_0___default().join(['Hello world', 'webpack'], ' ');\r\n    element.classList.add('hello');\r\n\r\n    btn.innerHTML = 'Click me and check the console!';\r\n    btn.onclick = _print_js__WEBPACK_IMPORTED_MODULE_3__[\"default\"];\r\n    element.appendChild(btn);\r\n\r\n    const myIcon = new Image();\r\n    myIcon.src = _Avatari_png__WEBPACK_IMPORTED_MODULE_2__;\r\n\r\n    // element.appendChild(myIcon);\r\n    return element;\r\n}\r\n\r\ndocument.body.appendChild(component());\n\n//# sourceURL=webpack://example-heroku-pro/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/print.js":
+/*!**********************!*\
+  !*** ./src/print.js ***!
+  \**********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ printMe)\n/* harmony export */ });\nfunction printMe() {\r\n    console.log('I get called from print.js!');\r\n}\n\n//# sourceURL=webpack://example-heroku-pro/./src/print.js?");
 
 /***/ }),
 
@@ -267,7 +278,7 @@ eval("module.exports = __webpack_require__.p + \"830a911075dd79b0ecac.png\";\n\n
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
-/******/ 	var __webpack_exports__ = __webpack_require__("./src/server.js");
+/******/ 	var __webpack_exports__ = __webpack_require__("./src/index.js");
 /******/ 	
 /******/ })()
 ;
