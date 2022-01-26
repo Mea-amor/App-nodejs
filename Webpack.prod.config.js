@@ -8,7 +8,7 @@ module.exports = {
         // poll: 1000, // Check for changes every second
     },
     mode: 'development',
-    entry: './src/index.js',
+    entry: './src/server.js',
     output: {
         filename: 'bundle.js',
         path: path.resolve(__dirname, 'dist'),

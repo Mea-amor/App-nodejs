@@ -7,7 +7,7 @@ function component() {
 
     // Lodash, currently included via a script, is required for this line to work
     // Lodash, now imported by this script
-    element.innerHTML = _.join(['Hello world', 'webpack'], ' ');
+    element.innerHTML = _.join(['Hello world server ', 'prod config'], ' ');
     element.classList.add('hello');
     const myIcon = new Image();
     myIcon.src = Icon;
