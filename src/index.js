@@ -9,7 +9,7 @@ function component() {
     // Lodash, now imported by this script
     element.innerHTML = _.join(['Hello world', 'webpack'], ' ');
 
-    btn.innerHTML = 'Click me and check the console Mea  amor!';
+    btn.innerHTML = 'Click me and check the console Mea  amor cherie i love!';
     // btn.onclick = printMe;
     element.appendChild(btn);
 

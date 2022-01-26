@@ -10,16 +10,8 @@ module.exports = {
     // },
     mode: 'development',
     entry: {
-        index: {
-            import: './src/index.js',
-            dependOn: 'shared',
-        },
-        another: {
-            import: './src/another-module.js',
-            dependOn: 'shared',
-        },
-        shared: 'lodash',
-    },
+        index: './src/index.js',
+       },
     devtool: 'inline-source-map', // In order to make it easier to track down errors and warnings, JavaScript offers source maps,   (though not for production)
     devServer: {
         static: './dist', //tell the dev server where to look for files:
@@ -27,17 +19,18 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            title: 'Output Management',
+            title: 'Caching',
         }),
     ],
     output: {
-        filename: '[name].bundle.js',
+        // filename: '[name].bundle.js',
+        filename: '[name].[contenthash].js',
         path: path.resolve(__dirname, 'dist'),
         clean: true,
     },
-    optimization: {
-        runtimeChunk: 'single',
-    },
+    // optimization: {
+    //     runtimeChunk: 'single',
+    // },
     module: {
         rules: [
             {
